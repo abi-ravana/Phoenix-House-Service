@@ -7,45 +7,89 @@
   <meta name="description" content="Professional home services: Electrical, Plumbing, AC, Fridge, Washing Machine, Painting, Caregivers, CCTV, Cleaning and more." />
   <style>
     :root{
-      --accent:#007bff;
-      --dark:#0f172a;
-      --muted:#64748b;
-      --card:#ffffff;
-      --bg:#f8fafc;
-      --container:1100px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-     @media screen and (max-width: 600px) 
-    {
-    .container {
-    width: 100%; /* அகலத்தை ஸ்கிரீன் முழுவதும் ஆக்குதல் */
-    padding: 10px;}
-    }
-    
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--dark);line-height:1.5}
-    .container{max-width:var(--container);margin:0 auto;padding:24px}
-    header{background:linear-gradient(90deg,var(--card),#f1f5f9);box-shadow:0 4px 18px rgba(15,23,42,0.06);}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:48px;height:48px;border-radius:10px;background:var(--accent);display:inline-grid;place-items:center;color:white;font-weight:700}
-    nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-weight:600}
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:40px 24px;align-items:center}
-    .hero h1{font-size:28px;margin:0 0 12px}
-    .hero p{color:var(--muted);margin:0 0 18px}
-    .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:700}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
-    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-    .service-item{padding:14px;border-radius:10px;border:1px solid #e6eef0;background:linear-gradient(180deg,#ffffff,#fbfeff)}
-    .service-item h4{margin:0 0 6px}
-    .section{padding:36px 0}
-    .about p{color:var(--muted);margin-bottom:12px}
-    .two-col{display:grid;grid-template-columns:1fr 360px;gap:18px}
-    .contact{display:flex;gap:12px;align-items:center}
-    footer{padding:22px 0;color:var(--muted);text-align:center}
+            --accent:#007bff;
+            --dark:#0f172a;
+            --muted:#64748b;
+            --card:#ffffff;
+            --bg:#f8fafc;
+            --container:1000px;
+            
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
 
-   
-  </style>
+        *{box-sizing:border-box}
+        body{margin:0;background:var(--bg);color:var(--dark);line-height:1.5}
+        
+        /* Containers: ஃபோனில் முழு அகலம் பயன்படுத்துகிறது */
+        .container{max-width:var(--container);margin:0 auto;padding:24px}
+        
+        header{background:linear-gradient(90deg,var(--card),#f1f5f9);box-shadow:0 4px 18px rgba(15,23,42,0.06);}
+        .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+        .brand{display:flex;gap:12px;align-items:center}
+        .logo{width:48px;height:48px;border-radius:10px;background:var(--accent);display:inline-grid;place-items:center;color:white;font-weight:700}
+        
+        /* Navbar Links - டெஸ்க்டாப்பிற்காக மறைக்கவில்லை */
+        nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-weight:600}
+        
+        /* Hero Section - டெஸ்க்டாப்/லேப்டாப் வியூ */
+        .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:40px 24px;align-items:center}
+        .hero h1{font-size:36px;margin:0 0 12px;line-height:1.2} /* பெரிய எழுத்துரு அளவு */
+        .hero p{color:var(--muted);margin:0 0 18px;font-size:18px} /* பெரிய எழுத்துரு அளவு */
+        .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:700}
+        .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+        
+        /* Services Grid - ஃபோனில் 1 காலம், லேப்டாப்பில் பல காலம் */
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+        .service-item{padding:14px;border-radius:10px;border:1px solid #e6eef0;background:linear-gradient(180deg,#ffffff,#fbfeff)}
+        .service-item h4{margin:0 0 6px}
+        .section{padding:36px 0}
+        .about p{color:var(--muted);margin-bottom:12px}
+        
+        /* Two Column Layout - டெஸ்க்டாப்/லேப்டாப் வியூ */
+        .two-col{display:grid;grid-template-columns:1fr 360px;gap:18px}
+        
+        .contact{display:flex;gap:12px;align-items:center}
+        footer{padding:22px 0;color:var(--muted);text-align:center;font-size:14px}
+
+
+        /* ------------------------------------------- */
+        /* 📱 Mobile Specific Styles (Maximum 768px width) */
+        /* ------------------------------------------- */
+        @media screen and (max-width: 768px) {
+            /* Navbar: லிங்க்குகளை மறைத்து, hamburger icon பயன்படுத்தலாம். இப்போது மறைக்கிறேன். */
+            .nav nav {
+                display: none; /* ஃபோனில் மெனுவை மறைத்தல் */
+            }
+            .nav {
+                padding: 12px 24px;
+            }
+            
+            /* Hero Section: ஒற்றை-காலம் லேஅவுட் */
+            .hero {
+                grid-template-columns: 1fr; /* 1 காலத்திற்கு மாற்றவும் */
+                padding: 30px 24px;
+                text-align: center; /* எழுத்துக்களை மையத்திற்கு கொண்டு வர */
+            }
+            .hero h1 {
+                font-size: 28px; /* ஃபோனுக்கு ஏற்றவாறு குறைத்தல் */
+            }
+            .hero p {
+                font-size: 16px;
+            }
+
+            /* Two Column Layout: ஒற்றை-காலம் லேஅவுட் */
+            .two-col {
+                grid-template-columns: 1fr; /* 1 காலத்திற்கு மாற்றவும் */
+            }
+            /* எல்லா பக்கெட்ஸ்களையும் ஃபோனில் 20px ஆக்குதல் */
+            .container {
+                padding: 0 20px;
+            }
+            .section {
+                padding: 30px 0;
+            }
+        }
+    </style>
   
 </head>
 <body>
@@ -287,4 +331,5 @@
 
 </body>
 </html>
+
 
