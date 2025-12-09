@@ -6,13 +6,13 @@
   <title>Phoenix House Services</title>
   <meta name="description" content="Professional home services: Electrical, Plumbing, AC, Fridge, Washing Machine, Painting, Caregivers, CCTV, Cleaning and more." />
   <style>
-    :root{
+   :root{
             --accent:#007bff;
             --dark:#0f172a;
             --muted:#64748b;
             --card:#ffffff;
             --bg:#f8fafc;
-            --container:1000px;
+            --container:1100px;
             
             font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
         }
@@ -36,7 +36,7 @@
         .hero h1{font-size:36px;margin:0 0 12px;line-height:1.2} /* பெரிய எழுத்துரு அளவு */
         .hero p{color:var(--muted);margin:0 0 18px;font-size:18px} /* பெரிய எழுத்துரு அளவு */
         .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:700}
-        .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+        .card{background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
         
         /* Services Grid - ஃபோனில் 1 காலம், லேப்டாப்பில் பல காலம் */
         .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
@@ -56,7 +56,7 @@
         /* 📱 Mobile Specific Styles (Maximum 768px width) */
         /* ------------------------------------------- */
         @media screen and (max-width: 768px) {
-           .nav {
+            .nav {
         /* ஃபோனில், wrap பயன்படுத்த வேண்டும் */
         flex-wrap: wrap; 
         padding: 12px 24px;
@@ -65,7 +65,7 @@
         }
     
         /* Brand (Logo and Name) */
-        .brand {
+       .brand {
         /* Brand ஐ முதலில் (மேலே) வைக்க */
         order: 1; 
         flex-basis: 100%; /* முழு அகலத்தை எடுத்துக்கொள்ள */
@@ -84,7 +84,7 @@
         /* Nav links இன் இடைவெளியைச் சரிசெய்தல் */
         .nav nav a {
         margin: 0 12px;
-       }
+        }
             
             /* Hero Section: ஒற்றை-காலம் லேஅவுட் */
             .hero {
@@ -112,6 +112,7 @@
             }
         }
     </style>
+
   
 </head>
 <body>
@@ -128,6 +129,7 @@
         <a href="index.html">Home</a>
         <a href="#services">Our Services</a>
         <a href="https://forms.gle/s9K1ZjrAFDpSouPGA">Join With Us</a>
+        
       </nav>
     </div>
   </header>
@@ -138,10 +140,11 @@
         <h1>Professional House Services — At Your Doorstep</h1>
         <p>We provide certified technicians, trained caregivers and dependable staff for every household need. Electrical, Plumbing, AC, Fridge, TV, Washing Machine, Painting, Caregiving and more.</p>
         <a class="cta" href="#services">See All Services</a>
-        
-       <aside>
+      </div>
+
+      <aside>
         <div class="card">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
             <div>
               <div style="font-weight:800">24/7 Service</div>
               <div style="font-size:13px;color:var(--muted)">Call or Book Online</div>
@@ -153,8 +156,7 @@
           <hr style="margin:14px 0;border:none;border-top:1px dashed #eef2f2">
           <div style="font-size:13px;color:var(--muted)">We service most areas — call for availability and same-day booking.</div>
         </div>
-      </aside>  
-        
+       </aside>
 
         <div class="section about">
           <h3 id="about">About Us</h3>
@@ -169,16 +171,16 @@
             </ul>
           </div>
         </div>
-      </div>
+      
 
       
+
       <aside>
-        <div class="card" style="margin-top:16px;text-align:center">
+        <div class="card" style="margin-top:25px;text-align:center">
           <div style="font-weight:800">Our Promise</div>
           <p style="color:var(--muted);margin:8px 0 0">Safe work, Reasonable pricing and clean finish. Customer satisfaction guaranteed. We don't just send repairmen; we send trust and peace of mind. Our primary goal in every home service is to deliver quality workmanship, honest , and timely service. Your satisfaction is our driving force.</p>
         </div>
       </aside>
-          
     </section>
 
     <section class="section" id="services">
@@ -236,7 +238,7 @@
           <div class="service-details">Split & Window AC servicing, gas filling, leak detection, compressor checks and installation.</div>
           <ul class="service-list">
             <li>AC general service & cleaning</li>
-            <li>Fridge general service & cleaning</li>
+            <li>Fridg general service & cleaning</li>
             <li>Gas top-up & leak repair</li>
             <li>Compressor & installation work</li>
           </ul>
@@ -357,8 +359,5 @@
 
 </body>
 </html>
-
-
-
 
 
