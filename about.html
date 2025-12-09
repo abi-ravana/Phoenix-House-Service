@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phoenix House Services</title>
+  <meta name="description" content="Professional home services: Electrical, Plumbing, AC, Fridge, Washing Machine, Painting, Caregivers, CCTV, Cleaning and more." />
+  <style>
+    :root{
+      --accent:#007bff;
+      --dark:#0f172a;
+      --muted:#64748b;
+      --card:#ffffff;
+      --bg:#f8fafc;
+      --container:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--dark);line-height:1.5}
+    .container{max-width:var(--container);margin:0 auto;padding:24px}
+    header{background:linear-gradient(90deg,var(--card),#f1f5f9);box-shadow:0 4px 18px rgba(15,23,42,0.06);}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:var(--accent);display:inline-grid;place-items:center;color:white;font-weight:700}
+    nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:40px 24px;align-items:center}
+    .hero h1{font-size:28px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:700}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .service-item{padding:14px;border-radius:10px;border:1px solid #e6eef0;background:linear-gradient(180deg,#ffffff,#fbfeff)}
+    .service-item h4{margin:0 0 6px}
+    .section{padding:36px 0}
+    .about p{color:var(--muted);margin-bottom:12px}
+    .two-col{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .contact{display:flex;gap:12px;align-items:center}
+    footer{padding:22px 0;color:var(--muted);text-align:center}
+
+   
+  </style>
+  
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">PHS</div>
+        <div>
+          <div style="font-weight:800">Phoenix House Service Website</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:2px">Trusted home services — fast • safe • reliable</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Our Services</a>
+        <a href="https://forms.gle/s9K1ZjrAFDpSouPGA">Join With Us</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Professional House Services — At Your Doorstep</h1>
+        <p>We provide certified technicians, trained caregivers and dependable staff for every household need. Electrical, Plumbing, AC, Fridge, TV, Washing Machine, Painting, Caregiving and more.</p>
+        <a class="cta" href="#services">See All Services</a>
+
+        <div class="section about">
+          <h3 id="about">About Us</h3>
+          <div class="card">
+            <p><strong>Phoenix House Service Website</strong> is a neighbourhood house services provider focused on fast response, transparent pricing and skilled professionals. We started with a small team of technicians and service providers and caregivers and grew by focusing on quality and trust. Our mission is to keep homes safe, comfortable and well-maintained.</p>
+            <p>Why choose us?</p>
+            <ul class="service-list">
+              <li>✔️ Trained & background-checked professionals</li>
+              <li>✔️ Fixed and transparent pricing</li>
+              <li>✔️ Same-day service for urgent repairs</li>
+              <li>✔️ Warranty on most repair works</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+            <div>
+              <div style="font-weight:800">24/7 Service</div>
+              <div style="font-size:13px;color:var(--muted)">Call or Book Online</div>
+            </div>
+            <div class="badge">Hot</div>
+          </div>
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">Phone: <strong>+94 77 7607026</strong></div>
+          <div style="margin-top:6px;font-size:13px;color:var(--muted)">Email: <strong>Phoenix@gmail.com</strong></div>
+          <hr style="margin:14px 0;border:none;border-top:1px dashed #eef2f2">
+          <div style="font-size:13px;color:var(--muted)">We service most areas — call for availability and same-day booking.</div>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <div style="font-weight:800">Our Promise</div>
+          <p style="color:var(--muted);margin:8px 0 0">Safe work, honest pricing and clean finish. Customer satisfaction guaranteed.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      
+
+      <div class="services-grid" style="margin-top:14px">
+
+        <!-- Service Cards: Keep order same as user list -->
+
+        <div class="service-item card" id="s1">
+          <h4>1. Electrical Services</h4>
+          <div class="service-details">All home electrical work - wiring, switches, lighting, MCB, inverter, and troubleshooting.</div>
+          <ul class="service-list">
+            <li>Switch & socket repair</li>
+            <li>Fan & lighting installation</li>
+            <li>Wiring & MCB replacement</li>
+            <li>Inverter & battery connection</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s2">
+          <h4>2. Plumbing Services</h4>
+          <div class="service-details">Kitchen & bathroom plumbing, pipe leaks, unclogging drains, water tanks and fittings.</div>
+          <ul class="service-list">
+            <li>Tap & shower repair</li>
+            <li>Drain cleaning & pipe replacement</li>
+            <li>Water tank cleaning & pump fitting</li>
+            <li>Sink,Tank fitting</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s3">
+          <h4>3. Carpenter Services</h4>
+          <div class="service-details">Doors, windows, cupboards, shelves, and custom woodwork , repairs and installations.</div>
+          <ul class="service-list">
+            <li>Furniture repair & assembly</li>
+            <li>Door & window fixing and repair</li>
+            <li>Custom shelving & carpentry</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s4">
+          <h4>4. TV Repair Services</h4>
+          <div class="service-details">LED/LCD/Smart TV troubleshooting - display, sound, motherboard, backlight, and wall-mounting.</div>
+          <ul class="service-list">
+            <li>Screen & backlight repair</li>
+            <li>Motherboard Issuses</li>
+            <li>Wall mount & HDMI setup</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s5">
+          <h4>5. AC & FRIDGE Repair Services</h4>
+          <div class="service-details">Split & Window AC servicing, gas filling, leak detection, compressor checks and installation.</div>
+          <ul class="service-list">
+            <li>AC general service & cleaning</li>
+            <li>Fridge general service & cleaning</li>
+            <li>Gas top-up & leak repair</li>
+            <li>Compressor & installation work</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s6">
+          <h4>6. Washing Machine Repair Services</h4>
+          <div class="service-details">Top load, Front load and Semi auto washing machine repair - motor, drum, PCB, water inlet and drain.</div>
+          <ul class="service-list">
+            <li>Drum & belt repair</li>
+            <li>PCB & motor fixes</li>
+            <li>Drain & inlet troubleshooting</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s7">
+          <h4>7. Painting Services</h4>
+          <div class="service-details">Interior & exterior painting, putty work, crack repair and waterproofing finishes.[Reasonable Pricing]</div>
+          <ul class="service-list">
+            <li>Full home painting</li>
+            <li>Room painting
+            <li>Wall crack filling & putty</li>
+            <li>Waterproofing solutions</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s8">
+          <h4>8. Caregiver (Baby & Elderly)</h4>
+          <div class="service-details">Professional caregivers for infants, children and elderly: personal care, feeding, medication reminders and companionship.</div>
+          <ul class="service-list">
+            <li>Full-time & part-time support</li>
+            <li>Trained and background-checked</li>
+            <li>Friendly Type</li>
+            <li>Customized care plans</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s9">
+          <h4>9. Welding Services</h4>
+          <div class="service-details">Fabrication, grill & gate repair, structural welding and metal works for home use.[Reasonable Pricing]</div>
+          <ul class="service-list">
+            <li>Gate & grill welds</li>
+            <li>Custom metal fabrication</li>
+            <li>Roof frame & repair</li>
+            <li>Other welds</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s10">
+          <h4>10. Cooking Services</h4>
+          <div class="service-details">Home cooks for daily meals, special occasions and events. Hygienic and taste-tailored menus.</div>
+          <ul class="service-list">
+            <li>Daily meal prepare</li>
+            <li>Event & function cooking</li>
+            <li>Customized menus</li>
+            <li>Roasting & Cook</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s11">
+          <h4>11. House Keeping Services</h4>
+          <div class="service-details">Regular & deep cleaning, kitchen & bathroom sanitization, floor polishing and organization services.</div>
+          <ul class="service-list">
+            <li>Deep home cleaning</li>
+            <li>Sofa & mattress shampooing</li>
+            <li>Regular housekeeping plans</li>
+            <li>Garden maintenance</li>
+          </ul>
+        </div>
+
+        <div class="service-item card" id="s12">
+          <h4>12. CCTV Installation Services</h4>
+          <div class="service-details">Security CCTV installation, DVR/NVR setup, mobile viewing, wiring and maintenance for households and small businesses.</div>
+          <ul class="service-list">
+            <li>HD/Smart camera install</li>
+            <li>Remote viewing setup</li>
+            <li>Wiring & DVR/NVR configuration</li>
+          </ul>
+        </div>
+
+      </div>
+
+      
+
+    </section>
+
+    <section class="section">
+      <h3>How it Works</h3>
+      <div class="two-col">
+        <div>
+          <ol style="color:var(--muted);padding-left:18px">
+            <li>Contact us via phone or online booking form</li>
+            <li>Tell us the service required and preferred time</li>
+            <li>We dispatch a certified technician or caregiver</li>
+            <li>Service completed, payment collected — warranty provided where applicable</li>
+            <li>Can send us the feedback through the form</li>
+            <li>Can join as a Service provider by filling out the [Join With Us] form to provide service with Us</li>
+          </ol>
+        </div>
+        <aside class="card">
+          <strong>Pricing</strong>
+          <p style="color:var(--muted);margin-top:8px">We provide fixed rate and Reasonable rate quotes for common jobs. Complex repairs may require a site visit. Ask for a free estimate when you book.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="font-weight:700">Phoenix House Service Website</div>
+        
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

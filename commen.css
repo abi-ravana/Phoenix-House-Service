@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+header {
+    background-color: white; /* White background for the entire header section */
+    padding: 5 0; /* Add top and bottom padding */
+    border-bottom: 3px solid #007bff; /* A blue line at the bottom for separation */
+    text-align: center;
+    
+    
+}
+
+/* --- Heading (h1) Styling --- */
+header h1 {
+    color: #ffffff; 
+    font-size: 2em;
+    background-color: #282c34;
+    padding: 25px 0;
+    margin-top: 0%;
+    
+
+}
+
+/* --- Navigation Bar (navbar) Styling --- */
+.navbar {
+    background: #007bff;  /* Blue background for the navigation bar */
+    padding: 5px 0; /* Padding inside the nav bar */
+    text-align: center; /* Center the links */
+    
+    
+}
+
+/* --- Link Styling --- */
+.navbar a {
+    color: white; /* White text for the links */
+    text-decoration: none; /* Remove the underline */
+    padding: 10px 15px; /* Spacing around the links */
+    margin: 0 5px; /* Space between the links */
+    font-weight: bold;
+    display: inline-block; /* Allows for easy spacing and clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+/* --- Hover Effect --- */
+.navbar a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+    border-radius: 4px; /* Slightly rounded corners on hover */
+}
+  
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+.product img {
+    width: 220px;
+    height: 220px;
+    
+}
+
+.product h2 {
+    font-size: x-large;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: large;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+
+
+/* Container for the search bar (using Flexbox for easy alignment) */
+.product-search-form {
+    display: flex;
+    max-width: 500px; /* Limit the width for a clean look */
+    margin: 20px auto; /* Center the search bar on the page */
+    border: 2px solid #ccc; /* Light grey border */
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Important to keep children within the border radius */
+}
+
+/* Styling the Text Input Field */
+.search-input {
+    flex-grow: 1; /* Makes the input field take up most of the space */
+    padding: 10px 15px;
+    border: none; /* Remove default border */
+    font-size: 16px;
+    outline: none; /* Remove the blue outline when focused */
+}
+
+/* Styling the Search Button */
+.search-button {
+    background-color: #007bff; /* Blue button background */
+    color: white; /* White text/icon */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; /* Change cursor to a hand pointer */
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+

@@ -1,0 +1,259 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+/* --- Header Styling --- */
+header {
+    background-color: white; /* White background for the entire header section */
+    padding: 5 0; /* Add top and bottom padding */
+    border-bottom: 3px solid #007bff; /* A blue line at the bottom for separation */
+    text-align: center;
+    
+    
+}
+
+/* --- Heading (h1) Styling --- */
+header h1 {
+    color: #ffffff; 
+    font-size: 2em;
+    background-color: #282c34;
+    padding: 25px 0;
+    margin-top: 0%;
+    
+
+}
+
+/* --- Navigation Bar (navbar) Styling --- */
+.navbar {
+    background: #007bff;  /* Blue background for the navigation bar */
+    padding: 5px 0; /* Padding inside the nav bar */
+    text-align: center; /* Center the links */
+    
+    
+}
+
+/* --- Link Styling --- */
+.navbar a {
+    color: white; /* White text for the links */
+    text-decoration: none; /* Remove the underline */
+    padding: 10px 15px; /* Spacing around the links */
+    margin: 0 5px; /* Space between the links */
+    font-weight: bold;
+    display: inline-block; /* Allows for easy spacing and clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+/* --- Hover Effect --- */
+.navbar a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+    border-radius: 4px; /* Slightly rounded corners on hover */
+}
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+   
+    
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.common-button {
+
+    background-color: #007BFF;
+    color: white;
+    padding: 6px 10px;
+    margin: 20px 10px;
+    align-items: center;
+    width: 250px;
+    height: 120px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+    font-size: x-large;
+   
+    
+}
+
+.common-button:hover {
+
+    background-color: #0056b3;
+
+}
+
+.image-button{
+
+     width: 255px;
+     height: 215px;
+     border-radius: 30px;
+     padding: 6px 10px;
+     margin: 20px 10px;
+     cursor: pointer;
+}
+
+
+
+/* பொத்தானின் அடிப்படை வடிவமைப்பு மற்றும் அசைவூட்டத்தை அமைத்தல் */
+.image-button img {
+    /* நீங்கள் விரும்பிய அளவு மற்றும் பிற அமைப்புகளை இங்கே கொடுக்கவும் */
+    width: 250px; /* உதாரணமாக */
+    height: 200px;
+    border: none; 
+    display: block; /* படமாக இருந்தால் */
+    border-radius: 30px;
+    /* அசைவூட்டத்தை (animation) மென்மையாக செய்வதற்கு */
+    /* 0.3 வினாடிக்கு மென்மையாக மாறும். */
+    transition: filter 0.3s ease; 
+   
+}
+
+/* மவுஸ் கர்சர் பொத்தானின் மீது வரும்போது (hover) செயல்பட வேண்டியவை */
+.image-button:hover img {
+    /* படத்தை 70% இருட்டாக்க (darken) */
+    /* 100% என்பது அசல் பிரகாசம்; 70% என்பது 30% இருட்டடித்தல். */
+    filter: brightness(70%);
+}
+
+/* பொத்தானை அழுத்தும்போது (active) மேலும் இருட்டாக்க */
+.image-button:active img {
+    /* 50% வரை இருட்டடிக்க */
+    filter: brightness(50%);
+}
+
+
+
+
+.contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; 
+}
+
+
+img[width="400"] {
+    border-radius: 50%; 
+    border: 5px solid #4F9CF9;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+    margin: 40px auto;
+}
+
+.paragraph {
+    /* Box Styling */
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff; 
+    border-right: 5px solid #007BFF;
+    border-left: 5px solid #007BFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+
+   
+    text-align: center;
+}
+
+.paragraph p {
+    font-size: 1.3rem; 
+    line-height: 1.7;
+    color: #444; 
+}
+
+
+.about {
+    /* Box Styling */
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f9f9f9; 
+    border-radius: 12px;
+    border-top: 5px solid #007BFF; 
+    border-bottom: 5px solid #007BFF; 
+   
+    color: #333;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007BFF; 
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
