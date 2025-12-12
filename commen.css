@@ -70,10 +70,10 @@ header h1 {
 .product {
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px;
+    margin: 25px;
     padding: 15px;
     text-align: center;
-    width: 300px;
+    width: 350px;
 }
 
 .product img {
@@ -152,4 +152,5 @@ footer {
 .search-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+
 
