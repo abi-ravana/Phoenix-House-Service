@@ -138,19 +138,15 @@ footer {
 }
 
 /* Styling the Search Button */
-.search-button {
+.search-icon {
     background-color: #007bff; /* Blue button background */
     color: white; /* White text/icon */
     padding: 10px 15px;
     border: none;
-    cursor: pointer; /* Change cursor to a hand pointer */
     font-size: 18px;
-    transition: background-color 0.3s;
+   
 }
 
-/* Hover effect for the button */
-.search-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
+
 
 
